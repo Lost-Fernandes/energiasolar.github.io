@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Solar - Sustentabilidade e Economia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Energia Solar - Sustentabilidade e Economia</h1>
+        <nav>
+            <ul>
+                <li><a href="#info">Sobre Energia Solar</a></li>
+                <li><a href="#calculator">Calculadora de Economia</a></li>
+                <li><a href="#monitoring">Monitoramento Solar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="info">
+        <h2>O que é Energia Solar?</h2>
+        <p>A energia solar é uma fonte de energia renovável e limpa obtida por meio da conversão da luz solar em eletricidade ou calor. Ela é abundante e tem o potencial de fornecer energia de forma sustentável, ajudando a reduzir os custos energéticos e as emissões de gases poluentes.</p>
+        <h3>Benefícios da Energia Solar</h3>
+        <ul>
+            <li>Redução nas contas de energia.</li>
+            <li>Menor impacto ambiental.</li>
+            <li>Aumento do valor do imóvel.</li>
+            <li>Independência energética.</li>
+        </ul>
+    </section>
+
+    <section id="calculator">
+        <h2>Calculadora de Consumo e Economia de Energia</h2>
+        <form id="solarCalculator">
+            <label for="consumo">Consumo Mensal de Energia (kWh):</label>
+            <input type="number" id="consumo" required>
+
+            <label for="sistema">Tamanho do Sistema Solar (kW):</label>
+            <input type="number" id="sistema" required>
+
+            <label for="custo">Custo Médio por kWh (R$):</label>
+            <input type="number" id="custo" required>
+
+            <button type="submit">Calcular Economia</button>
+        </form>
+        <div id="resultado"></div>
+    </section>
+
+    <section id="monitoring">
+        <h2>Monitoramento de Painéis Solares</h2>
+        <div id="monitoramentoStatus">
+            <h3>Energia Gerada Hoje:</h3>
+            <p id="energiaGerada">0 kWh</p>
+            <h3>Economia Estimada:</h3>
+            <p id="economiaEstimada">R$ 0,00</p>
+        </div>
+        <canvas id="graficoMonitoramento"></canvas>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Desenvolvido por Pascoal Fernandes</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
